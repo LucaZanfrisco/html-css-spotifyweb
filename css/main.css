@@ -90,7 +90,11 @@ hr{
 }
 .album .flex{
     flex-wrap: wrap;
+}
+.album .tipo{
     justify-content: center;
+    max-width: 39.0625rem;
+    margin: 0 auto;
 }
 .album .flex .col{
     width: calc(100% / 4);
@@ -100,18 +104,18 @@ hr{
     font-size: .75rem;
     color: #7d7f84;
 }
-.recent{
+.album-title{
     font-size: 1.5625rem;
     font-weight: bolder;
 }
 .album .flex .box-album{
-    width: 48%;
+    width: calc(100% / 2 - 1.25rem);
     text-align: center;
     font-weight: bold;
+    margin: 0 10px;
 }
 .album .recent-album{
-    justify-content: space-between;
-    margin-top: 35px;
+    margin: 35px -10px 0;
 }
 .album .flex .box-album img{
     width: 100%;
@@ -119,11 +123,40 @@ hr{
 .album .box-album .album-name{
     margin: 1.25rem 0 1.0625rem;
 }
-.album .box-album .subtitle{
+.subtitle{
     color: #7d7f84;
     font-size: .8125rem;
     margin-bottom: .625rem;
+    margin-top: .625rem;
 }
+
+/* Main sezione album formato sm */
+@media screen and (min-width: 640px) {
+    .album .flex .col{
+        width: calc(100% / 3);
+    }
+}
+/* ------- */
+/* main sezione album formato medium */
+@media screen and (min-width: 878px) {
+    .album .flex .col{
+        width: calc(100% / 5);
+    }
+    .album .flex .box-album{
+        width: calc(100% / 4 - 1.25rem);
+    }
+}
+/* ------- */
+/* mains sezione album formato large */
+@media screen and (min-width: 1140px) {
+    .album .flex .col {
+        width: calc(100% / 6);
+    }
+    .album .flex .box-album {
+        width: calc(100% / 6 - 1.25rem);
+    }
+}
+/* ------- */
 
 
 

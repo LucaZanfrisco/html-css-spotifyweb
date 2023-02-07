@@ -40,6 +40,7 @@
     </header>
     <!-- /header -->
     <main>
+        <!-- container generale main diviso in due nav e album -->
         <div class="container flex">
             <!-- nav bar laterale -->
             <nav class="flex">
@@ -94,10 +95,11 @@
                 <!-- /bax icone in basso della nav bar      -->
             </nav>
             <!-- nav bar laterale -->
+
             <!-- main centrale degli album -->
             <div class="album">
                 <!-- elenco tipolgie -->
-                <div class="flex">
+                <div class="flex tipo">
                     <div class="col">In Evidenza</div>
                     <div class="col">Podcast</div>
                     <div class="col">Classifiche</div>
@@ -106,8 +108,9 @@
                     <div class="col">Scopri</div>
                 </div>
                 <!-- /elenco tipolgie -->
+
                 <!-- Sezione degli ultimi ascoltati -->
-                <div class="recent">Recently Played</div>
+                <div class="album-title">Recently Played</div>
                 <!-- container flex degli album -->
                 <div class="flex recent-album">
                     <!-- box-album con copertina e descrizione -->
@@ -151,9 +154,45 @@
                     <!-- box-album con copertina e descrizione -->
                     <!-- /box-album con copertina e descrizione -->
                 </div>
-            </div>
+                <!-- /container flex degli album -->
+
+                <!-- sezione personale  -->
+                <div class="album-title">Creato da John Doe</div>
+                <div class="subtitle"> 
+                        Più ascolti, più accurati saranno i suggerimeti
+                </div>
+                <div class="flex recent-album">
+                    <div class="box-album">
+                        <img src="img/radar.jpeg" alt="radar">
+                        <div class="album-name">Release Radar</div>
+                    </div>
+                    <div class="box-album">
+                        <img src="img/mixdaily.jpeg" alt="mixdaily">
+                        <div class="album-name">Daily Mix 1</div>
+                    </div>
+                </div>
+                <!-- /sezione perosnale -->
+
+                <!-- sezione artisti più popolari -->
+                <div class="album-title">Artisti più popolari</div>
+                <div class="subtitle">Più ascolti, più accurati saranno i suggerimeti</div>
+                <div class="flex recent-album circle">
+                    <div class="box-album">
+                        <img src="img/youg.jpeg" alt="youg">
+                        <div class="album-name">Young</div>
+                    </div>
+                    <div class="box-album">
+                        <img src="img/einaudi.jpeg" alt="einaudi">
+                        <div class="album-name">Ludovico Einaudi</div>
+                    </div>
+                </div>
+                <!-- /sezione artisti più popolari -->
+            </div> 
+            <!-- /main centrale degli album -->
         </div>
+        <!-- /container generale main diviso in due nav e album -->
     </main>
+
     <footer>
     </footer>
 </body>
