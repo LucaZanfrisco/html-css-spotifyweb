@@ -1,0 +1,14 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --nav-left: #000;
+    --color-main: #141922;
+    --nav-bottom: #282828;
+}
+.flex{
+    display: flex;
+}
+li{
+    list-style: none;
+}

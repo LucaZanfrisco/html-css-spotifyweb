@@ -1,0 +1,13 @@
+header{
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: right;
+    padding: 1.25rem .625rem 1.75rem;
+    max-height: 5.625rem;
+}
+header button{
+    border: 2px solid white;
+    padding: .9375rem 2.5rem;
+    background-color: transparent;
+    color: white;
+    border-radius: 50px;
+}
