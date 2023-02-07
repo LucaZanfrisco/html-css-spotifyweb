@@ -1,9 +1,6 @@
 main nav {
     background-color: var(--nav-left);
     max-width: 3rem;
-    position: absolute;
-    top: 0;
-    height: calc(100vh - 90px);
     flex-direction: column;
     justify-content: space-between;
     color: white;
@@ -57,29 +54,15 @@ main .flex ul li:hover{
     overflow: auto;
     margin: 22px 0 25px;
 }
-.nav-bottom{
-}
 
 /* Main nav-bar formato -sm */
 @media screen and (min-width: 640px) {
     main nav{
         max-width: 14.375rem;
         padding: 1.25rem;
-        /* justify-content: stretch; */
     }
     .name{
         display: block;
-    }
-    .logo{
-        margin-bottom: 1.5625rem;
-    } 
-    .logo img{
-        width: 40px;
-        height: 40px;
-    }
-    .logo-name{
-        font-size: 1.875rem;
-        font-weight: bold;
     }
     .nav-mid{
         display: block;
@@ -90,4 +73,5 @@ main .flex ul li:hover{
 .album{
     background-color: var(--color-main);
     height: calc(100vh - 90px);
+    width: 100%;
 }

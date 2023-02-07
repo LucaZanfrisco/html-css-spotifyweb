@@ -1,8 +1,18 @@
 header{
     background-color: rgba(0, 0, 0, 0.9);
-    text-align: right;
-    padding: 1.25rem .625rem 1.75rem;
     max-height: 5.625rem;
+    color: white;
+}
+header > .flex{
+    justify-content: space-between;
+}
+header .flex .flex.logo{
+    background-color: var(--nav-left);
+    width: 48px;
+    height: 5.625rem;
+    align-items: center;
+    padding: 10px;
+    align-items: center;
 }
 header button{
     border: 2px solid white;
@@ -10,4 +20,27 @@ header button{
     background-color: transparent;
     color: white;
     border-radius: 50px;
+}
+.btn-box{
+    padding: 1.25rem .625rem 1.75rem;
+}
+.logo-sm{
+    width: 28px;
+    height: 28px;
+}
+.logo-bg{
+    display: none;
+}
+@media screen and (min-width: 640px) {
+    header .flex .flex.logo{
+        width: 230px;
+        padding-left: 1.25rem;
+    }
+    .logo-bg{
+        display: block;
+        width: 75%;
+    }
+    .logo-sm{
+        display: none;
+    }
 }
