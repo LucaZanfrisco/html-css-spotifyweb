@@ -8,10 +8,10 @@ header > .flex{
 }
 header .flex .flex.logo{
     background-color: var(--nav-left);
-    width: 48px;
+    max-width: 230px;
     height: 5.625rem;
     align-items: center;
-    padding: 10px;
+    padding: .625rem;
     align-items: center;
 }
 header button{
@@ -31,10 +31,11 @@ header button{
 .logo-bg{
     display: none;
 }
+/* Header formato sm  */
 @media screen and (min-width: 640px) {
     header .flex .flex.logo{
-        width: 230px;
-        padding-left: 1.25rem;
+        width: 100%;
+        padding-left: 20px;
     }
     .logo-bg{
         display: block;
@@ -44,3 +45,4 @@ header button{
         display: none;
     }
 }
+/* ------- */

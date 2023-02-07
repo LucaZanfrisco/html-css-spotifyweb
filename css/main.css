@@ -1,13 +1,17 @@
+/* Nav-Bar Laterale */
 main nav {
     background-color: var(--nav-left);
-    max-width: 3rem;
+    max-width: 230px;
+    color: white;
+    padding: 10px;
+}
+nav.flex{
     flex-direction: column;
     justify-content: space-between;
-    color: white;
 }
 main nav ul li.flex{
     align-items: center;
-    padding: 10px;
+    margin: 14px 0;
 }
 main nav ul li img{
     height: 28px;
@@ -20,9 +24,6 @@ main nav ul li img{
 }
 .fa-circle-down{
     opacity: 0.5;
-}
-main .flex ul li:hover{
-    color: white;
 }
 .fa-circle-down{
     margin-left: .3125rem;
@@ -37,7 +38,6 @@ main .flex ul li:hover{
 .nav-mid{
     margin-top: 30px;
     opacity: 0.5;
-    padding: 0 10px;
 }
 .nav-mid > div:first-child{
     color: white;
@@ -50,16 +50,24 @@ main .flex ul li:hover{
     padding: .5625rem;
     margin-right: .625rem;
 }
-.list-name li{
+.nav-mid .list-name{
     overflow: auto;
+}
+.nav-mid .list-name li{
     margin: 22px 0 25px;
 }
-
+hr{
+    display: none;
+}
+/* ------- */
 /* Main nav-bar formato -sm */
 @media screen and (min-width: 640px) {
     main nav{
-        max-width: 14.375rem;
-        padding: 1.25rem;
+        width: 100%;
+        padding: 0 1.25rem;
+    }
+    nav.flex{
+        overflow: hidden;
     }
     .name{
         display: block;
@@ -67,11 +75,56 @@ main .flex ul li:hover{
     .nav-mid{
         display: block;
     }
+    hr{
+        display: block;
+    }
 }
 /* ------------------ */
-
+/* Sezione centrale degli album musicali */
 .album{
     background-color: var(--color-main);
-    height: calc(100vh - 90px);
+    width: calc(100% - 48px);
+    padding: 1.875rem;
+    color: white;
+    overflow: auto;
+}
+.album .flex{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.album .flex .col{
+    width: calc(100% / 4);
+    margin-bottom: 2.3125rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .75rem;
+    color: #7d7f84;
+}
+.recent{
+    font-size: 1.5625rem;
+    font-weight: bolder;
+}
+.album .flex .box-album{
+    width: 48%;
+    text-align: center;
+    font-weight: bold;
+}
+.album .recent-album{
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.album .flex .box-album img{
     width: 100%;
 }
+.album .box-album .album-name{
+    margin: 1.25rem 0 1.0625rem;
+}
+.album .box-album .subtitle{
+    color: #7d7f84;
+    font-size: .8125rem;
+    margin-bottom: .625rem;
+}
+
+
+
+

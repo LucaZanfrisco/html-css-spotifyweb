@@ -2,7 +2,4 @@ footer{
     background-color: var(--nav-bottom);
     height: 5.75rem;
     width: 100%;
-    position: relative;
-    left: 0;
-    bottom: 90px;
 }
