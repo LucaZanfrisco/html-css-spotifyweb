@@ -4,47 +4,57 @@ footer{
     width: 100%;
     color: white;
 }
-footer .flex{
+footer > .flex{
     height: 100%;
     align-items: center;
+    justify-content: space-between;
     padding: 0 .625rem;
 }
+
+/* Parte sinistra del player */
 .mini-player {
-    width: 25%;
+    max-width: 215px;
+    align-items: center;
 }
 .mini-player img{
-    width: 100%;
-    height: 29px;
+    max-height: 44px;
     display: block;
+    margin-right: .625rem;
 }
-.mini-player ul.flex{
+.mini-player .album-info{
+    max-width: 6.25rem;
+}
+.mini-player ul{
     flex-wrap: wrap;
 }
-footer  .flex  .mini-player .subtitle{
+.mini-player .subtitle{
     margin: 0;
-}
-.sound-player{
-    width: 50%;
-    padding: 0 20px;
-}
-.sound-player ul.flex{
-    justify-content: center;
-}
-.sound-player ul.flex li{
-    width: calc(100% / 5);
-}
-footer .sound-player ul.flex li{
-    align-items: center;
-    justify-content: center;
-}
-footer .sound-player .time-bar{
-    height: 3px;
-    background-color: white;
     width: 100%;
 }
-.fa-circle-play{
-    font-size: 30px;
+footer .flex .mini-player .album-name{
+    width: 100%;
 }
-.volume{
-    width: 25%;
+.mini-player ul.flex.icon li{
+    opacity: 0.5;
+    width: 100%;
 }
+/* Footer parte sinistra del player in tutti i formati */
+@media screen and (min-width: 552px) {
+    .mini-player ul.flex .subtitle{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 640px) {
+    .mini-player ul.flex.icon{
+        flex-wrap: nowrap;
+    }
+    .fa-folder{
+        margin-left: .3125rem;
+    }
+}
+@media screen and (min-width: 878px) {
+    .mini-player{
+        width: 100%;
+    }
+}
+/* ------- */
