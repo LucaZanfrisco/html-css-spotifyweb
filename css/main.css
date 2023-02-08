@@ -4,10 +4,11 @@ main nav {
     max-width: 230px;
     color: white;
     padding: 10px;
+    height: 100%;
 }
 nav.flex{
     flex-direction: column;
-    justify-content: space-between;
+    overflow: hidden;
 }
 main nav ul li.flex{
     align-items: center;
@@ -28,8 +29,17 @@ main nav ul li img{
 .fa-circle-down{
     margin-left: .3125rem;
 }
+.nav-top{
+    flex-grow: 1;
+}
 .nav-mid{
     display: none;
+    flex-grow: 1;
+    overflow: hidden;
+}
+.nav-mid .list-name{
+    overflow: auto;
+    height: 100%;
 }
 .nav-mid .flex{
     align-items: center;
@@ -50,9 +60,6 @@ main nav ul li img{
     padding: .5625rem;
     margin-right: .625rem;
 }
-.nav-mid .list-name{
-    overflow: auto;
-}
 .nav-mid .list-name li{
     margin: 22px 0 25px;
 }
@@ -61,13 +68,13 @@ hr{
 }
 /* ------- */
 /* Main nav-bar formato -sm */
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 552px) {
     main nav{
         width: 100%;
         padding: 0 1.25rem;
     }
-    nav.flex{
-        overflow: hidden;
+    .nav-top{
+        flex-grow: 0;
     }
     .name{
         display: block;
@@ -131,14 +138,14 @@ hr{
 }
 
 /* Main sezione album formato sm */
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 552px) {
     .album .flex .col{
         width: calc(100% / 3);
     }
 }
 /* ------- */
 /* main sezione album formato medium */
-@media screen and (min-width: 878px) {
+@media screen and (min-width: 640px) {
     .album .flex .col{
         width: calc(100% / 5);
     }
@@ -148,9 +155,11 @@ hr{
 }
 /* ------- */
 /* mains sezione album formato large */
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 878px) {
     .album .flex .col {
         width: calc(100% / 6);
+        padding: 5px;
+        font-size: .625rem;
     }
     .album .flex .box-album {
         width: calc(100% / 6 - 1.25rem);

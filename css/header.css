@@ -1,5 +1,5 @@
 header{
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0);
     max-height: 5.625rem;
     color: white;
 }
@@ -32,7 +32,7 @@ header button{
     display: none;
 }
 /* Header formato sm  */
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 552px) {
     header .flex .flex.logo{
         width: 100%;
         padding-left: 20px;
