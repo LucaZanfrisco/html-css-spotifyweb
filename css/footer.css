@@ -58,3 +58,24 @@ footer .flex .mini-player .album-name{
     }
 }
 /* ------- */
+
+/* Parte centrale del footer  */
+.sound-player .control{
+    max-width: 200px;
+}
+.sound-player .control li{
+    padding: 0 10px 5px;
+}
+.sound-player .time{
+    max-width: 525px;
+    align-items: center;
+}
+.time-bar{
+    max-width: 430px;
+    margin: 0 8px;
+}
+.time-bar div{
+    height: 3px;
+    background-color: white;
+    width: 100%;
+}
