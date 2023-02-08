@@ -101,14 +101,14 @@
             <!-- main centrale degli album -->
             <div class="album">
                 <!-- elenco tipolgie -->
-                <div class="flex tipo">
-                    <div class="col">In Evidenza</div>
-                    <div class="col">Podcast</div>
-                    <div class="col">Classifiche</div>
-                    <div class="col">Generi e Mood</div>
-                    <div class="col">Nuove Uscite</div>
-                    <div class="col">Scopri</div>
-                </div>
+                <ul class="flex tipo">
+                    <li class="col">In Evidenza</li>
+                    <li class="col">Podcast</li>
+                    <li class="col">Classifiche</li>
+                    <li class="col">Generi e Mood</li>
+                    <li class="col">Nuove Uscite</li>
+                    <li class="col">Scopri</li>
+                </ul>
                 <!-- /elenco tipolgie -->
 
                 <!-- Sezione degli ultimi ascoltati -->
@@ -195,10 +195,47 @@
         <!-- /container generale main diviso in due nav e album -->
     </main>
 
-    <footer>
-        <div>
-
+    <footer> 
+        <div class="flex">
+           <div class="mini-player flex">
+                <img src="img/sinister.jpeg" alt="player_left">
+                <ul class="flex">
+                    <li class="album-name">Sinister</li>
+                    <li class="subtitle">Brano</li>
+                    <li class="subtitle">Nome</li>
+                </ul>
+                <ul class="flex">
+                    <li class="icon"><i class="fa-regular fa-heart"></i></li>
+                    <li class="icon"><i class="fa-regular fa-folder"></i></li>
+                </ul>
+             </div>
+            <div class="sound-player">
+                <ul class="flex">
+                    <li><i class="fa-solid fa-shuffle"></i></li>
+                    <li><i class="fa-solid fa-backward-step"></i></li>
+                    <li><i class="fa-regular fa-circle-play"></i></li>
+                    <li><i class="fa-solid fa-forward-step"></i></li>
+                    <li><i class="fa-solid fa-arrow-rotate-right"></i></li>  
+                </ul>
+                <ul class="flex">
+                    <li>0:25</li>
+                    <li>
+                        <div class="time-bar"></div>
+                    </li>
+                    <li>4:35</li>
+                </ul>
+                
+            </div>
+            <div class="volume">
+                <ul class="flex">
+                    <li><i class="fa-solid fa-bars"></i></li>
+                    <li><i class="fa-solid fa-display"></i></li>
+                    <li><i class="fa-solid fa-volume-high"></i></li>
+                    <li>volume bar</li>
+                </ul>
+            </div>  
         </div>
+       
     </footer>
 </body>
 </html>
