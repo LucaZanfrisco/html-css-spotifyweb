@@ -17,3 +17,9 @@ li{
     height: calc(100vh - 11.25rem);
     overflow: hidden;
 }
+.barra{
+    background-color: white;
+    height: .25rem;
+    width: 100%;
+    border-radius: 5px;
+}

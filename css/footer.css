@@ -18,12 +18,13 @@ footer > .flex{
     flex-grow: 1;
 }
 .mini-player img{
-    max-height: 44px;
+    height: 29px;
     display: block;
     margin-right: .625rem;
 }
 .mini-player .album-info{
     max-width: 6.25rem;
+    margin-right: .3125rem;
 }
 .mini-player ul{
     flex-wrap: wrap;
@@ -34,6 +35,7 @@ footer > .flex{
 }
 footer .flex .mini-player .album-name{
     width: 100%;
+    font-size: .8125rem;
 }
 .mini-player ul.flex.icon li{
     opacity: 0.5;
@@ -46,16 +48,23 @@ footer .flex .mini-player .album-name{
     }
 }
 @media screen and (min-width: 640px) {
+    .mini-player img{
+            height: 2.75rem;
+    }
     .mini-player ul.flex.icon{
         flex-wrap: nowrap;
     }
     .fa-folder{
         margin-left: .3125rem;
     }
+         
 }
 @media screen and (min-width: 878px) {
     .mini-player{
         width: 100%;
+    }
+    .mini-player img{
+        height: 2.75rem;
     }
 }
 /* ------- */
@@ -70,17 +79,16 @@ footer .flex .mini-player .album-name{
     align-items: center;
 }
 .sound-player .control li{
-    padding: 0 20px 5px;
+    padding: 0 10px 5px;
 }
 .sound-player .time{
     align-items: center;
-    justify-content: center;
+    margin: 0 .3125rem;
+    font-size: .875rem;
 }
-.time-bar{
-    margin: 0 20px;
-    background-color: white;
-    height: 3px;
+.time-b{
     width: 100%;
+    margin: 0 .625rem;
 }
 .fa-circle-play{
     font-size: 1.875rem;
@@ -97,10 +105,9 @@ footer .flex .mini-player .album-name{
 }
 .volume .flex li{
     padding: 0 .3125rem;
+    font-size: .8125rem;
 }
-.volume .sound-bar{
-    height: 3px;
-    background-color: white;
+.volume .sound{
     width: 100%;
 }
 /* ------- */
