@@ -64,6 +64,8 @@ main nav ul li img{
 }
 hr{
     display: none;
+    width: 80%;
+    margin: 0 auto;
 }
 /* ------- */
 /* Main nav-bar formato -sm */
