@@ -60,21 +60,40 @@ footer .flex .mini-player .album-name{
 /* ------- */
 
 /* Parte centrale del footer  */
+.sound-player{
+    max-width: 525px;
+    flex-grow: 1;
+}
 .sound-player .control{
     max-width: 200px;
+    margin: 0 auto;
+    align-items: center;
 }
 .sound-player .control li{
     padding: 0 10px 5px;
 }
 .sound-player .time{
-    max-width: 525px;
     align-items: center;
+    justify-content: center;
 }
 .time-bar{
-    max-width: 430px;
-    margin: 0 8px;
+    margin: 0 20px;
+    background-color: white;
+    height: 3px;
+    width: 100%;
 }
-.time-bar div{
+.fa-circle-play{
+    font-size: 1.875rem;
+}
+/* ------- */
+
+.volume{
+    max-width: 230px;
+}
+.volume .flex{
+    align-items: center;
+}
+.volume .sound-bar{
     height: 3px;
     background-color: white;
     width: 100%;
