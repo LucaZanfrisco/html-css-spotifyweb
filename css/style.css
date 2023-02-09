@@ -13,11 +13,12 @@ button:hover{
     border-radius: .625rem;
     transition: border-radius linear 0.7s;
 }
+/* Nav laterale */
 nav.flex li:hover{
     color: white;
     font-size: 1.125rem;
     cursor: pointer;
-    border-left: 3px solid green;
+    border-left: 3px solid #adff2f;
 }
 .nav-mid .flex:hover{
     filter: invert(1);
@@ -25,4 +26,20 @@ nav.flex li:hover{
     font-size: 1.25rem;
     color: black;
 }
+/* ------- */
+/* Sezione Album */
+.col:hover{
+    cursor: pointer;
+}
+.col:hover::before{
+    content: "";
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    height: 1px;
+    width: 50%;
+    border-bottom: 2px solid #adff2f;
+}
+
+
 /* ------- */

@@ -104,10 +104,11 @@ hr{
     margin-bottom: 1.875rem;
 }
 .album .flex .col{
-    padding: 5px;
+    padding: 5px 10px;
     font-weight: bold;
     text-transform: uppercase;
     color: #7d7f84;
+    position: relative;
 }
 .album-title{
     font-size: 1.5625rem;
