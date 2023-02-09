@@ -114,14 +114,25 @@ hr{
     font-size: 1.5625rem;
     font-weight: bolder;
 }
+.album .recent-album{
+    margin: 35px -10px 0;
+}
 .album .flex .box-album{
     width: calc(100% / 2 - 1.25rem);
     text-align: center;
     font-weight: bold;
     margin: 0 10px;
 }
-.album .recent-album{
-    margin: 35px -10px 0;
+.box-img{
+    position: relative;
+}
+.box-img .fa-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.6875rem;
+    visibility: hidden;
 }
 .album .flex .box-album img{
     width: 100%;

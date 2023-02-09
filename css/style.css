@@ -40,6 +40,12 @@ nav.flex li:hover{
     width: 50%;
     border-bottom: 2px solid #adff2f;
 }
-
+.box-img:hover img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.box-img:hover .fa-play{
+    visibility: visible;
+}
 
 /* ------- */
