@@ -2,12 +2,15 @@
 main nav {
     background-color: var(--nav-left);
     max-width: 230px;
-    color: white;
-    padding: 10px;
+    color: #7d7f84;
+    /* padding: 10px; */
     height: 100%;
 }
 nav.flex{
     flex-direction: column;
+}
+nav li{
+    padding: 0 .625rem;
 }
 main nav ul li.flex{
     align-items: center;
@@ -20,10 +23,6 @@ main nav ul li img{
 .name{
     margin-left: 10px;
     display: none;
-    opacity: 0.5;
-}
-.fa-circle-down{
-    opacity: 0.5;
 }
 .fa-circle-down{
     margin-left: .3125rem;
@@ -36,7 +35,9 @@ main nav ul li img{
     flex-grow: 1;
     overflow: hidden;
     margin-top: 30px;
-    opacity: 0.5;
+}
+.nav-mid .flex{
+    padding-left: 20px;
 }
 .nav-mid .list-name{
     overflow: auto;
@@ -48,8 +49,9 @@ main nav ul li img{
 }
 .nav-mid > div:first-child{
     color: white;
-    opacity: 1;
     font-weight: bold;
+    font-size: 1.5625rem;
+    padding: 0 20px;
 }
 .fa-plus{
     background-color: white;
@@ -68,7 +70,9 @@ hr{
 @media screen and (min-width: 552px) {
     main nav{
         width: 100%;
-        padding: 0 1.25rem;
+    }
+    nav li{
+        padding-left: 1.25rem;
     }
     .nav-top{
         flex-grow: 0;

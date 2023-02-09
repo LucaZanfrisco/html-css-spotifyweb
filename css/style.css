@@ -8,3 +8,21 @@
     box-sizing: border-box;
 }
 
+/* Animazioni */
+button:hover{
+    border-radius: .625rem;
+    transition: border-radius linear 0.7s;
+}
+nav.flex li:hover{
+    color: white;
+    font-size: 1.125rem;
+    cursor: pointer;
+    border-left: 3px solid green;
+}
+.nav-mid .flex:hover{
+    filter: invert(1);
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: black;
+}
+/* ------- */
