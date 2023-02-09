@@ -3,7 +3,6 @@ main nav {
     background-color: var(--nav-left);
     max-width: 230px;
     color: #7d7f84;
-    height: 100%;
     margin-top: 5.625rem;
 }
 nav.flex{
