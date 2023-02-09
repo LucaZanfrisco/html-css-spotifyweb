@@ -15,6 +15,7 @@ footer > .flex{
 .mini-player {
     max-width: 215px;
     align-items: center;
+    flex-grow: 1;
 }
 .mini-player img{
     max-height: 44px;
@@ -65,12 +66,11 @@ footer .flex .mini-player .album-name{
     flex-grow: 1;
 }
 .sound-player .control{
-    max-width: 200px;
-    margin: 0 auto;
+    justify-content: center;
     align-items: center;
 }
 .sound-player .control li{
-    padding: 0 10px 5px;
+    padding: 0 20px 5px;
 }
 .sound-player .time{
     align-items: center;
@@ -87,14 +87,20 @@ footer .flex .mini-player .album-name{
 }
 /* ------- */
 
+/* Parte destra del footer */
 .volume{
-    max-width: 230px;
+    max-width: 210px;
+    flex-grow: 1;
 }
 .volume .flex{
     align-items: center;
+}
+.volume .flex li{
+    padding: 0 .3125rem;
 }
 .volume .sound-bar{
     height: 3px;
     background-color: white;
     width: 100%;
 }
+/* ------- */
