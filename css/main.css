@@ -3,8 +3,8 @@ main nav {
     background-color: var(--nav-left);
     max-width: 230px;
     color: #7d7f84;
-    /* padding: 10px; */
     height: 100%;
+    margin-top: 5.625rem;
 }
 nav.flex{
     flex-direction: column;
@@ -102,6 +102,7 @@ hr{
     flex-wrap: wrap;
 }
 .album .tipo{
+    margin-top: 5.625rem;
     justify-content: center;
     margin-bottom: 1.875rem;
 }

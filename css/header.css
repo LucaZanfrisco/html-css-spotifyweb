@@ -1,10 +1,15 @@
 header{
-    background-color: rgba(0, 0, 0);
+    background-color: rgba(0, 0, 0, 02.5rem);
     max-height: 5.625rem;
     color: white;
 }
 header > .flex{
     justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 header .flex .flex.logo{
     background-color: var(--nav-left);
@@ -13,10 +18,15 @@ header .flex .flex.logo{
     align-items: center;
     padding: .625rem;
 }
+.btn-box{
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-grow: 1;
+    text-align: right;
+}
 header button{
     border: 2px solid white;
     padding: .9375rem 2.5rem;
-    background-color: transparent;
+    background-color: black;
     color: white;
     border-radius: 50px;
 }
