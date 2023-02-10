@@ -30,6 +30,7 @@ nav.flex li:hover{
 /* Sezione Album */
 .col:hover{
     cursor: pointer;
+    color: white;
 }
 .col:hover::before{
     content: "";
@@ -55,6 +56,12 @@ nav.flex li:hover{
 }
 .mini-player .icon i:hover{
     font-size: 1.25rem;
+}
+.fa-heart:hover{
+    color: red;
+}
+.fa-folder:hover{
+    color: orange;
 }
 .mini-player img:hover{
     scale: 5;

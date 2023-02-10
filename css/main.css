@@ -104,12 +104,13 @@ hr{
     margin-top: 5.625rem;
     justify-content: center;
     margin-bottom: 1.875rem;
+    color: #7d7f84;
 }
 .album .flex .col{
     padding: 5px 10px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #7d7f84;
+    
     position: relative;
 }
 .album-title{
